@@ -55,11 +55,135 @@ que será 16px
 .text-center{
     text-align: center;
 }
+/* FIM resets gerais */
+
+/* ================ HEADER =================== */
+header ul li a{
+    padding: 10px;
+    color:var(--wine);
+    transition: all 0.3s;
+}
+
+header ul li a.item-menu:hover{
+    background: var(--wine);
+    color: var(--yellow);
+}
+
+header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header ul{
+    background: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 12px 30px;
+    height: 55px;
+    min-width: 800px;
+
+    
+}
+
+
+header ul li{
+    list-style: none;
+    font-family: "Rum Raisin", sans-serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+
+}
+
+
+
+/* =========== LINKS AND BUTTONS ============== */
+a{
+    text-decoration: none;
+}
+
+
+button{
+    background: var(--yellow);
+    cursor: pointer;
+
+    padding: 10px 35px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.87);
+
+    color: var(--wine);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: "Rum Raisin", sans-serif;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background: #fff;
+    color: var(--wine);
+    padding: 10px 50px;
+}
+
+
+
+
+
 /* ============= TITLES ================ */
 .titulo-banner h1{
     font-family: "Rum Raisin", sans-serif;
     font-weight: normal;
     font-size: 5rem;
-    color: var(--amarelo);
+    color: var(--yellow);
 }
-/* FIM resets gerais */
+
+
+
+
+
+/* =============== BANNER ============== */
+.slider{
+    display: flex;
+    transition: all ease .4s;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 75vh;
+}
+
+.img-titulo-banner img{
+    min-width: 400px;
+
+}
+
+.description-banner{
+    position:relative;
+    top:-30px;
+    max-width: 380px;
+}
+
+.left-banner p{
+    line-height: 44px;
+    letter-spacing: 0.8px;
+    color: #fff;
+    font-family: "Rum Raisin", sans-serif;
+}
+
+.description-banner p:first-child{
+    font-family: "Rum Raisin", sans-serif;
+    font-size: 1.9rem;
+}
+
+.d-none img{
+    max-width: 600px;
+}
