@@ -58,6 +58,7 @@ que será 16px
 /* FIM resets gerais */
 
 /* ================ HEADER =================== */
+
 header ul li a{
     padding: 10px;
     color:var(--wine);
@@ -106,6 +107,9 @@ a{
     text-decoration: none;
 }
 
+.box-arrow-down a{
+    color: var(--yellow);
+}
 
 button{
     background: var(--yellow);
@@ -153,6 +157,25 @@ button:hover{
     transition: all ease .4s;
 }
 
+.controls-slide{
+    margin: auto;
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.controls-slide i{
+    font-size:2rem;
+    color: var(--yellow);
+    opacity: .6;
+    cursor: pointer;
+    text-shadow: 1px 1px 20px #000;
+    transition: all ease .2s;
+}
+
+
 .banner{
     display: flex;
     align-items: center;
@@ -179,11 +202,56 @@ button:hover{
     font-family: "Rum Raisin", sans-serif;
 }
 
+
+/* :first-child > seleciona o primeiro filho direto da classe, seria um modo alternativo de selecionar uma parte específica sem precisar dar class
+ntd-child() > permite especificar qual elemento o filho deseja ser selecionado.
+Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
 .description-banner p:first-child{
     font-family: "Rum Raisin", sans-serif;
     font-size: 1.9rem;
 }
 
-.d-none img{
-    max-width: 600px;
+.description-banner p{
+    font-size: 1.6rem
 }
+
+.description-banner i{
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.right-banner img{
+    max-width: 500px;
+    transition: all 0.3s;
+}
+
+.right-banner img:hover{
+    transform: scale(1.02);
+}
+
+/* arrows */
+
+.box-arrow-down i{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.box-arrow-down i{
+    text-shadow: 1px 1px 20px #000;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.box-arrow-down i:hover, .controls-slide i:hover, .btn-cardapio:hover, .active{
+    opacity: 1;
+}
+
+.box-arrow-down{
+    padding: 0 0 4.5rem;
+}
+
+
+
+
+
+
