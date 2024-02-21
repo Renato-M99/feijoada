@@ -253,5 +253,59 @@ Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
 
 
 
+/* ==================== SECTION CARDÁPIO ======================= */
 
+.cardapio{
+    background: #e5e5e5 url(../assets/img/bg_icons.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* Define se uma imagem irá ROLAR JUNTO (scroll) com o conteúdo ou ficará FIXA(fixed) independentemente da posição colocada. */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+   
+}
 
+.box-cardapio{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 4rem 0;
+}
+
+.days-week{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+
+    background: var(--wine) url(../assets/img/bg_icons.svg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box-btn-cardapio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-btn-cardapio a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--yellow);
+}
+
+.box-btn-cardapio a:first-child{
+    margin-top: 5px;
+}
+
+.dishes-day{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 140px 60px 50px 20px;
+    background: rgba(229, 229, 229, 0.7);
+}
