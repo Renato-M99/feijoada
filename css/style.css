@@ -134,7 +134,25 @@ button:hover{
     color: var(--wine);
     padding: 10px 50px;
 }
+.btn-cardapio{
+    border: 3px solid var(--yellow);
+    border-radius: 46px;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.87));
+    padding: 8px;
+    margin-top: 40px;
+    width: 160px;
+    max-width: 160px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s;
+}
 
+.btn-cardapio:hover{
+    color: var(--wine);
+    background: var(--yellow);
+    transition: scale(1.05);
+}
 
 
 
@@ -147,7 +165,33 @@ button:hover{
     color: var(--yellow);
 }
 
+h2, h4{
+    font-family: "Rum Raisin", sans-serif;
+    font-weight: normal;
+    color: var(--wine);
+}
 
+h2{
+    color: var(--yellow);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.dishes-day .col-1 h3:first-child{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.dishes-day .col-1 #box-dish-main .first h4{
+    color: var(--yellow);
+}
+
+.dishes-day h4{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--wine);
+}
 
 
 
@@ -308,4 +352,83 @@ Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
     gap: 50px;
     padding: 140px 60px 50px 20px;
     background: rgba(229, 229, 229, 0.7);
+}
+
+.dishes-day .col-1{
+    display: flex;
+    flex-direction: column;
+}
+
+#box-dish-main .first{
+    background: var(--wine);
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.contents-box-dish{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents-box-dish p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.contents-box-dish p small{
+    margin-left: 2px;
+    font-size: 0.8rem;
+}
+
+.dish{
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.dish p{
+    color: #000;
+}
+
+/* ====================== SECTION GALERIA =========================== */
+
+.box-galeria{
+    display: flex;
+    justify-content: center;
+    background: #e5e5e5 url(../assets/img/bg_icons.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 100px;
+} 
+
+.box-fotos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px;
+    margin-top: 20px;
+}
+
+.container-fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-fotos h2{
+    color: var(--wine);
+    margin-bottom: 20px;
+}
+
+.box-fotos img:hover{
+    transform: scale(1.05);
+    filter: contrast(150%);
+}
+
+.box-galeria img{
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
