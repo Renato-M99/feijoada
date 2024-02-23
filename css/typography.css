@@ -1,0 +1,8 @@
+/* =================== RESETS GERAIS - TIPOGRAFIA =================== */
+
+*{
+    font-size: 93.75%;
+    --wine: #a30404;
+    --yellow: #fed40e;
+    --grey: #e5e5e5;
+}

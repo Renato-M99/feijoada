@@ -34,43 +34,51 @@ body {
 que será 16px 
     rem = sempre será relativa a fonte definida no elemento :root, caso não tenha definida :root irá pegar o padrão do navegador que será 16px
 */
-.container{
+.container {
     width: min(90vw, 800vw);
     padding-top: 4rem;
     margin: auto;
 }
-.img-fluid{
+
+.img-fluid {
     width: max(14vw, 100px);
     object-fit: cover;
+    /* Altera o modo de como a imagem/elemento vai se adequar dentro de um espaço(por exemplo: uma div). 
+    Essa propriedade é igual a backgroud-size, a diferença é que a propriedade object-fit será utilizada quando for uma 
+    imagem no HTML enquanto a background-size será utilizada com uma imagem de fundo chamada no CSS. */
 }
-.flex-center-full{
+
+.flex-center-full {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.row{
+
+.row {
     flex-direction: row;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
+
 /* FIM resets gerais */
 
 /* ================ HEADER =================== */
 
-header ul li a{
+header ul li a {
     padding: 10px;
-    color:var(--wine);
+    color: var(--wine);
     transition: all 0.3s;
 }
 
-header ul li a.item-menu:hover{
+header ul li a.item-menu:hover {
     background: var(--wine);
     color: var(--yellow);
 }
 
-header{
+header {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -78,7 +86,7 @@ header{
     flex-direction: column;
 }
 
-header ul{
+header ul {
     background: var(--yellow);
     display: flex;
     justify-content: space-between;
@@ -88,11 +96,11 @@ header ul{
     height: 55px;
     min-width: 800px;
 
-    
+
 }
 
 
-header ul li{
+header ul li {
     list-style: none;
     font-family: "Rum Raisin", sans-serif;
     font-size: 2.2rem;
@@ -103,15 +111,15 @@ header ul li{
 
 
 /* =========== LINKS AND BUTTONS ============== */
-a{
+a {
     text-decoration: none;
 }
 
-.box-arrow-down a{
+.box-arrow-down a {
     color: var(--yellow);
 }
 
-button{
+button {
     background: var(--yellow);
     cursor: pointer;
 
@@ -129,12 +137,13 @@ button{
     transition: all 0.3s ease;
 }
 
-button:hover{
+button:hover {
     background: #fff;
     color: var(--wine);
     padding: 10px 50px;
 }
-.btn-cardapio{
+
+.btn-cardapio {
     border: 3px solid var(--yellow);
     border-radius: 46px;
     filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.87));
@@ -148,7 +157,7 @@ button:hover{
     transition: all 0.3s;
 }
 
-.btn-cardapio:hover{
+.btn-cardapio:hover {
     color: var(--wine);
     background: var(--yellow);
     transition: scale(1.05);
@@ -158,50 +167,76 @@ button:hover{
 
 
 /* ============= TITLES ================ */
-.titulo-banner h1{
+.titulo-banner h1 {
     font-family: "Rum Raisin", sans-serif;
     font-weight: normal;
     font-size: 5rem;
     color: var(--yellow);
 }
 
-h2, h4{
+h2, h4 {
     font-family: "Rum Raisin", sans-serif;
     font-weight: normal;
     color: var(--wine);
 }
 
-h2{
+h2 {
     color: var(--yellow);
     font-size: 3.5rem;
     text-transform: uppercase;
 }
 
-.dishes-day .col-1 h3:first-child{
+.dishes-day .col-1 h3:first-child {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 800;
 }
 
-.dishes-day .col-1 #box-dish-main .first h4{
+.dishes-day .col-1 #box-dish-main .first h4 {
     color: var(--yellow);
 }
 
-.dishes-day h4{
+.dishes-day h4 {
     font-size: 1.8rem;
     text-transform: uppercase;
     color: var(--wine);
 }
 
+.container-fotos h2 {
+    color: var(--wine);
+    margin-bottom: 20px;
+}
 
+#galeria h2 {
+    color: var(--wine);
+    margin-top: 10px;
+}
+
+.perfil-funcionario h4 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#box-whats-delivery h4{
+    font-size: 4.2rem;
+}
+
+.perfil-funcionario p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #363636;
+}
 
 /* =============== BANNER ============== */
-.slider{
+.slider {
     display: flex;
     transition: all ease .4s;
 }
 
-.controls-slide{
+.controls-slide {
     margin: auto;
     display: flex;
     width: 40vw;
@@ -210,8 +245,8 @@ h2{
     margin-top: 3rem;
 }
 
-.controls-slide i{
-    font-size:2rem;
+.controls-slide i {
+    font-size: 2rem;
     color: var(--yellow);
     opacity: .6;
     cursor: pointer;
@@ -220,7 +255,7 @@ h2{
 }
 
 
-.banner{
+.banner {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -228,18 +263,18 @@ h2{
     height: 75vh;
 }
 
-.img-titulo-banner img{
+.img-titulo-banner img {
     min-width: 400px;
 
 }
 
-.description-banner{
-    position:relative;
-    top:-30px;
+.description-banner {
+    position: relative;
+    top: -30px;
     max-width: 380px;
 }
 
-.left-banner p{
+.left-banner p {
     line-height: 44px;
     letter-spacing: 0.8px;
     color: #fff;
@@ -250,47 +285,47 @@ h2{
 /* :first-child > seleciona o primeiro filho direto da classe, seria um modo alternativo de selecionar uma parte específica sem precisar dar class
 ntd-child() > permite especificar qual elemento o filho deseja ser selecionado.
 Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
-.description-banner p:first-child{
+.description-banner p:first-child {
     font-family: "Rum Raisin", sans-serif;
     font-size: 1.9rem;
 }
 
-.description-banner p{
+.description-banner p {
     font-size: 1.6rem
 }
 
-.description-banner i{
+.description-banner i {
     margin-left: 10px;
     font-size: 2rem;
 }
 
-.right-banner img{
+.right-banner img {
     max-width: 500px;
     transition: all 0.3s;
 }
 
-.right-banner img:hover{
+.right-banner img:hover {
     transform: scale(1.02);
 }
 
 /* arrows */
 
-.box-arrow-down i{
+.box-arrow-down i {
     margin-top: 2rem;
     font-size: 3rem;
 }
 
-.box-arrow-down i{
+.box-arrow-down i {
     text-shadow: 1px 1px 20px #000;
     opacity: 0.7;
     transition: all 0.2s;
 }
 
-.box-arrow-down i:hover, .controls-slide i:hover, .btn-cardapio:hover, .active{
+.box-arrow-down i:hover, .controls-slide i:hover, .btn-cardapio:hover, .active {
     opacity: 1;
 }
 
-.box-arrow-down{
+.box-arrow-down {
     padding: 0 0 4.5rem;
 }
 
@@ -299,7 +334,7 @@ Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
 
 /* ==================== SECTION CARDÁPIO ======================= */
 
-.cardapio{
+.cardapio {
     background: #e5e5e5 url(../assets/img/bg_icons.svg);
     background-size: cover;
     background-attachment: fixed;
@@ -307,16 +342,16 @@ Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
     height: 100vh;
     display: flex;
     align-items: center;
-   
+
 }
 
-.box-cardapio{
+.box-cardapio {
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: 4rem 0;
 }
 
-.days-week{
+.days-week {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -328,13 +363,13 @@ Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
     background-attachment: fixed;
 }
 
-.box-btn-cardapio{
+.box-btn-cardapio {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.box-btn-cardapio a{
+.box-btn-cardapio a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -342,11 +377,11 @@ Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
     color: var(--yellow);
 }
 
-.box-btn-cardapio a:first-child{
+.box-btn-cardapio a:first-child {
     margin-top: 5px;
 }
 
-.dishes-day{
+.dishes-day {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -354,81 +389,176 @@ Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
     background: rgba(229, 229, 229, 0.7);
 }
 
-.dishes-day .col-1{
+.dishes-day .col-1 {
     display: flex;
     flex-direction: column;
 }
 
-#box-dish-main .first{
+#box-dish-main .first {
     background: var(--wine);
     padding: 10px 15px;
     border-radius: 15px;
     margin-top: 20px;
 }
 
-.contents-box-dish{
+.contents-box-dish {
     display: flex;
     justify-content: space-between;
 }
 
-.contents-box-dish p{
+.contents-box-dish p {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 6px;
 }
 
-.contents-box-dish p small{
+.contents-box-dish p small {
     margin-left: 2px;
     font-size: 0.8rem;
 }
 
-.dish{
+.dish {
     padding: 10px 15px;
     margin-top: 20px;
 }
 
-.dish p{
+.dish p {
     color: #000;
 }
 
 /* ====================== SECTION GALERIA =========================== */
 
-.box-galeria{
+.box-galeria, #box-equipe {
     display: flex;
     justify-content: center;
     background: #e5e5e5 url(../assets/img/bg_icons.svg);
     background-size: cover;
     background-attachment: fixed;
     padding-bottom: 100px;
-} 
+}
 
-.box-fotos{
+.box-fotos, #box-fotos-equipe {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 45px;
     margin-top: 20px;
 }
 
-.container-fotos{
+.container-fotos, #container-equipe {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container-fotos h2{
-    color: var(--wine);
-    margin-bottom: 20px;
-}
-
-.box-fotos img:hover{
+.box-fotos img:hover, #box-equipe img:hover {
     transform: scale(1.05);
-    filter: contrast(150%);
+    filter: grayscale(50%);
 }
 
-.box-galeria img{
+.box-galeria img, #box-equipe img {
     height: auto;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
+}
+
+/* ======================= FOOTER =========================== */
+footer{
+    background: #353535 url(../assets/img/bg_icons.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 4rem;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-info-contato{
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: max(20vw, 480px);
+    padding: 15px;
+    margin-top: 25px;
+}
+
+.box-info-contato p{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#phone .box-info-contato p{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.box-info-contato i{
+    font-size: 2.2rem;
+    color: var(--wine);
+}
+
+#box-whats-delivery{
+    background: #fff;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-whats-delivery p{
+    color: var(--wine);
+    font-size: 1.1rem;
+}
+
+#box-whats-delivery img{
+    width: max(7vw, 110px);
+    position: absolute;
+    left: min(42vw, 550px);
+    transition: all 0.3s;
+}
+
+#whats{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+#whats:hover{
+    transform: scale(1.05);
+}
+
+#whats i{
+    font-size: 3.6rem;
+    color: #34af23;
+    margin-left:7px;
+}
+
+.redes-sociais{
+    text-align: right;
+    font-size: 3rem;
+    margin-top: 15px;
+}
+.redes-sociais i{
+    color: #fff;
+    margin-left: 15px;
+}
+
+.redes-sociais a:hover{
+    text-shadow: 1px 1px 8px #000;
+}
+
+#direitos{
+    margin-top: 1rem;
+    color: #fff;
+    font-size: .9rem;
+}
+
+#box-whats-delivery img:hover{
+    /* !important = define prioridade máxima para uma propriedade, quando aplicado garante que nenhuma outra regra sobreponha a regra onde foi utilizado */
+    left: min(45vw, 600px) !important;
 }
