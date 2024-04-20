@@ -105,7 +105,6 @@
         padding: 0 20px 20px;
     }
 
-}
 
 /* ================== SECTION GALERIA ========================= */
 
@@ -115,10 +114,11 @@
 }
 
 
-.box-fotos, #box-container-fotos{
-    grid-template-columns: 1fr 1fr;
+#box-fotos-equipe, .box-fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
     gap: 20px;
-}
+} 
 
 .small-img{
     width: 100%;
@@ -155,3 +155,5 @@ footer{
     font-size: 3rem;
 }
 
+
+}
