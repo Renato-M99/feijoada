@@ -63,6 +63,7 @@ que será 16px
     text-align: center;
 }
 
+
 /* FIM resets gerais */
 
 /* ================ HEADER =================== */
@@ -283,6 +284,12 @@ h2 {
 }
 
 
+.btn-menu-mobile i{
+    display: none;
+}
+.menu-mobile i{
+    display: none;
+}
 /* :first-child > seleciona o primeiro filho direto da classe, seria um modo alternativo de selecionar uma parte específica sem precisar dar class
 ntd-child() > permite especificar qual elemento o filho deseja ser selecionado.
 Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
@@ -304,8 +311,12 @@ Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
     max-width: 500px;
     transition: all 0.3s;
 }
+.left-banner img{
+    max-width: 500px;
+    transition: all 0.3s;
+}
 
-.right-banner img:hover {
+.right-banner img:hover, .left-banner img:hover {
     transform: scale(1.02);
 }
 
@@ -422,7 +433,17 @@ Por exemplo: ntd-child(2) > seleciona o segundo elemento da classe pai*/
 .dish {
     padding: 10px 15px;
     margin-top: 20px;
+    cursor:pointer;
 }
+.dish:hover{
+    background: var(--wine);
+    
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+
+}
+    
 
 .dish p {
     color: #000;
@@ -477,6 +498,7 @@ footer{
 #contato{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .box-info-contato{
@@ -542,7 +564,7 @@ footer{
 }
 
 .redes-sociais{
-    text-align: right;
+    text-align: center;
     font-size: 3rem;
     margin-top: 15px;
 }
